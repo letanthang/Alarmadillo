@@ -12,6 +12,11 @@
 		3B0645E41D879B81008816EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B0645E21D879B81008816EA /* Main.storyboard */; };
 		3B0645E61D879B81008816EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B0645E51D879B81008816EA /* Assets.xcassets */; };
 		3B0645E91D879B81008816EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B0645E71D879B81008816EA /* LaunchScreen.storyboard */; };
+		3B0645F11D87AB3E008816EA /* GroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0645F01D87AB3E008816EA /* GroupViewController.swift */; };
+		3B0645F31D87AB4A008816EA /* AlarmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0645F21D87AB4A008816EA /* AlarmViewController.swift */; };
+		3B0645F51D87ADE9008816EA /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0645F41D87ADE9008816EA /* Group.swift */; };
+		3B0645F71D87ADF5008816EA /* Alarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0645F61D87ADF5008816EA /* Alarm.swift */; };
+		3B853AC01D8BA084005B3556 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B853ABF1D8BA084005B3556 /* Helper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		3B0645E51D879B81008816EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3B0645E81D879B81008816EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3B0645EA1D879B81008816EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B0645F01D87AB3E008816EA /* GroupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupViewController.swift; sourceTree = "<group>"; };
+		3B0645F21D87AB4A008816EA /* AlarmViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmViewController.swift; sourceTree = "<group>"; };
+		3B0645F41D87ADE9008816EA /* Group.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
+		3B0645F61D87ADF5008816EA /* Alarm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alarm.swift; sourceTree = "<group>"; };
+		3B853ABF1D8BA084005B3556 /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,12 +66,25 @@
 			children = (
 				3B0645DE1D879B81008816EA /* AppDelegate.swift */,
 				3B0645E01D879B81008816EA /* ViewController.swift */,
+				3B0645F01D87AB3E008816EA /* GroupViewController.swift */,
+				3B0645F21D87AB4A008816EA /* AlarmViewController.swift */,
+				3B853ABF1D8BA084005B3556 /* Helper.swift */,
 				3B0645E21D879B81008816EA /* Main.storyboard */,
+				3B0645F81D87AE27008816EA /* Model */,
 				3B0645E51D879B81008816EA /* Assets.xcassets */,
 				3B0645E71D879B81008816EA /* LaunchScreen.storyboard */,
 				3B0645EA1D879B81008816EA /* Info.plist */,
 			);
 			path = Alarmadillo;
+			sourceTree = "<group>";
+		};
+		3B0645F81D87AE27008816EA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3B0645F41D87ADE9008816EA /* Group.swift */,
+				3B0645F61D87ADF5008816EA /* Alarm.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +160,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B0645F31D87AB4A008816EA /* AlarmViewController.swift in Sources */,
+				3B853AC01D8BA084005B3556 /* Helper.swift in Sources */,
+				3B0645F11D87AB3E008816EA /* GroupViewController.swift in Sources */,
 				3B0645E11D879B81008816EA /* ViewController.swift in Sources */,
+				3B0645F51D87ADE9008816EA /* Group.swift in Sources */,
 				3B0645DF1D879B81008816EA /* AppDelegate.swift in Sources */,
+				3B0645F71D87ADF5008816EA /* Alarm.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +330,7 @@
 				3B0645EF1D879B81008816EA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
